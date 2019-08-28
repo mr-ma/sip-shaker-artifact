@@ -4,6 +4,10 @@ Honoring ACSAC's initiative, we have decided upon releasing both software and da
 
 ## Dockerized Approach
 
+```
+docker run -it --privileged -lxc-conf="aa_profile=unconfined" -v /sys/fs/cgroup:/sys/fs/cgroup:rw --security-opt seccomp=unconfined {imageid/imagename} bash
+```
+
 ## Protection Passes
 
 ## Utility Passes
