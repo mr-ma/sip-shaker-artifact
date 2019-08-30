@@ -3,6 +3,7 @@ This repository contains the artifacts of our paper at ACSAC'2019.
 Honoring ACSAC's initiative, we have decided upon releasing both software and data of our work.
 
 
+
 ## Dockerized Approach
 
 ### Setting up Testbed
@@ -57,3 +58,16 @@ We recommend the dockerized approach. Interested users, can build the entire too
 
 ### Evaluation Benchmark
 [SIP Evaluation](https://github.com/mr-ma/composition-sip-eval)
+
+
+## Citation Details (TO APPEAR)
+```
+@inproceedings{ahmadvand2019sip,
+  title={SIP Shaker: Software Integrity Protection Composition},
+  author={Ahmadvand, Mohsen and Fischer, Dennis and Banescu, Sebastian},
+  booktitle={TO APPEAR in Proceedings of the 35th Annual Computer Security Applications Conference},
+  pages={----},
+  year={2019},
+  organization={ACM}
+}
+```
