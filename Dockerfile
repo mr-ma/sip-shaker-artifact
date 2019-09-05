@@ -33,7 +33,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
       mkdir -p /home/sip/ && \
       cd /home/sip/ && git clone https://github.com/nlohmann/json.git && mkdir -p /home/sip/json/build/ && cd /home/sip/json/build/ && cmake -DJSON_BuildTests=Off --config=Release .. && make && make install && cd /home/sip && rm -rf /home/sip/json/ && \
-    pip install argparse numpy pandas r2pipe pwn benchexec pypandoc && \
+    pip install argparse numpy pandas r2pipe pwn benchexec==1.16 pypandoc && \
     wget https://github.com/sosy-lab/benchexec/releases/download/1.16/benchexec_1.16-1_all.deb && dpkg -i benchexec_*.deb && rm benchexec_*.deb
     
 WORKDIR /
