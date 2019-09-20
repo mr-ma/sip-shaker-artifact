@@ -14,6 +14,8 @@ Run docker container with the following parameters:
 
 Please note that our performance measurements are done using [benchexec](https://github.com/sosy-lab/benchexec) tool which relies on cgroup access. Therefore, you need to make sure that your docker container has r/w access permission to the host's cgroup.  
 
+As noted in the paper, in order to generate protected instances for 6 programs, namely `cjpeg`, `djpeg`, `say`, `susan`, `tetris`, and `toast`, we need to use a faster solver. For this purpose, we prepared experimental branches as well as a [Dockerfile](https://github.com/mr-ma/sip-shaker-artifact/tree/experimental-gurobi), which contains the info about the right branches that are needed to be used. 
+
 
 
 ### Dataset
