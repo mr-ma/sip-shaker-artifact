@@ -4,7 +4,7 @@ Honoring ACSAC's initiative, we have decided upon releasing both software and da
 
 
 
-## Dockerized Approach
+## Dockerized Approach 
 
 ### Setting up Testbed
 
@@ -14,10 +14,11 @@ Run docker container with the following parameters:
 
 Please note that our performance measurements are done using [benchexec](https://github.com/sosy-lab/benchexec) tool which relies on cgroup access. Therefore, you need to make sure that your docker container has r/w access permission to the host's cgroup.  
 
-
+### Gurobi Solver
+We hardcoded the path to the gurobi solver in the composition framework as `/opt/gurobi811/` [See](https://github.com/mr-ma/composition-framework/blob/scip-solver/src/composition/graph/ILPSolver.cpp#L131). Therefore, the user has to place the solver in the mentioned path. Keep in mind that it is neccessary to obtain a license to run the gurobi solver.
 
 ### Dataset
-In the docker container `eval/local_dataset` contains bitcode files for the 19 programs that were used in our evaluations.
+In the docker container `eval/local_dataset` contains bitcode files for the 6 programs that require the Gurobi solver to be properly benchmarked.
 The same directory can be found in the [composition-sip-eval](https://github.com/mr-ma/composition-sip-eval) repository.
 
 
