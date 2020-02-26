@@ -62,14 +62,23 @@ We recommend the dockerized approach. Interested users, can build the entire too
 [SIP Evaluation](https://github.com/mr-ma/composition-sip-eval)
 
 
-## Citation Details (TO APPEAR)
+## Citation Details
 ```
 @inproceedings{ahmadvand2019sip,
-  title={SIP Shaker: Software Integrity Protection Composition},
-  author={Ahmadvand, Mohsen and Fischer, Dennis and Banescu, Sebastian},
-  booktitle={TO APPEAR in Proceedings of the 35th Annual Computer Security Applications Conference},
-  pages={----},
-  year={2019},
-  organization={ACM}
+author = {Ahmadvand, Mohsen and Fischer, Dennis and Banescu, Sebastian},
+title = {SIP Shaker: Software Integrity Protection Composition},
+year = {2019},
+isbn = {9781450376280},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3359789.3359848},
+doi = {10.1145/3359789.3359848},
+booktitle = {Proceedings of the 35th Annual Computer Security Applications Conference},
+pages = {203–214},
+numpages = {12},
+keywords = {integrity protection, software protection, man-at-the-end (MATE)},
+location = {San Juan, Puerto Rico},
+series = {ACSAC ’19}
 }
+
 ```
