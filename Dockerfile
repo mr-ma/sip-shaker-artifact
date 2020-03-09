@@ -3,6 +3,9 @@ FROM ubuntu:18.10
 ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+##UBUNTU 18.10 is no longer supported!!! Let's use old-releases until we migrate to UBUNTU 18.04
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
 RUN apt-get update && apt-get -y upgrade && apt-get -y install curl wget gnupg && rm -rf /var/lib/apt/lists/*
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|apt-key add -
 
